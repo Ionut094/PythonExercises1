@@ -15,7 +15,7 @@ class AdvancedExercises(unittest.TestCase):
         subsets = list(advanced.subsets(s1))
         self.assertTrue(all(elem in subsets for elem in res))
 
-    def test_singleto(self):
+    def test_singleton(self):
         singletons = [advanced.Singleton() for i in range(0, 99)]
         singleton = advanced.Singleton()
         self.assertTrue(all(elem is singleton for elem in singletons))
